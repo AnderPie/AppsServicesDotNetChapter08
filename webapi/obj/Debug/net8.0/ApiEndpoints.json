@@ -1,0 +1,214 @@
+[
+  {
+    "ContainingType": "Packt.Extensions.WebApplicationExtensions\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003CMapGets\u003Eb__1",
+    "RelativePath": "api/products",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Northwind.EntityModels.Product[]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetProducts"
+  },
+  {
+    "ContainingType": "Packt.Extensions.WebApplicationExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPosts\u003Eb__1_0",
+    "RelativePath": "api/products",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "Northwind.EntityModels.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Northwind.EntityModels.Product",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "Packt.Extensions.WebApplicationExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGets\u003Eb__0_6",
+    "RelativePath": "api/products{name}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Northwind.EntityModels.Product[]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetProductById"
+  },
+  {
+    "ContainingType": "Packt.Extensions.WebApplicationExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGets\u003Eb__0_5",
+    "RelativePath": "api/products/{id:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Northwind.EntityModels.Product",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "EndpointName": "GetProductsById"
+  },
+  {
+    "ContainingType": "Packt.Extensions.WebApplicationExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPuts\u003Eb__2_0",
+    "RelativePath": "api/products/{id:int}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "product",
+        "Type": "Northwind.EntityModels.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      }
+    ]
+  },
+  {
+    "ContainingType": "Packt.Extensions.WebApplicationExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDeletes\u003Eb__3_0",
+    "RelativePath": "api/products/{id:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Func\u00601[[Microsoft.AspNetCore.Http.IResult, Microsoft.AspNetCore.Http.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Func\u00601[[Microsoft.AspNetCore.Http.IResult, Microsoft.AspNetCore.Http.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Func\u00601[[Microsoft.AspNetCore.Http.IResult, Microsoft.AspNetCore.Http.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 204
+      }
+    ]
+  },
+  {
+    "ContainingType": "Packt.Extensions.WebApplicationExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGets\u003Eb__0_3",
+    "RelativePath": "api/products/discontinued",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Northwind.EntityModels.Product[]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetProductsDiscontinued"
+  },
+  {
+    "ContainingType": "Packt.Extensions.WebApplicationExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGets\u003Eb__0_4",
+    "RelativePath": "api/products/outofstock",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Northwind.EntityModels.Product[]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ProductsOutOfStock"
+  }
+]
